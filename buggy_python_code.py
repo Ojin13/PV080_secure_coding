@@ -13,7 +13,17 @@ def transcode_file(request, filename):
 
 
 # Assert statements
-def foo(request, user):
+'''
+    This is docstring.
+
+    Parameters:
+            a (string): requset
+            b (string): user
+
+    Returns:
+            None: nothing, just executes
+'''
+def assert_statement(request, user):
     assert user.is_admin, 'user does not have access'
     # secure code...
 
@@ -23,6 +33,16 @@ class RunBinSh(object):
     def __reduce__(self):
         return (subprocess.Popen, (('/bin/sh',),))
 
+
+'''
+    This is docstring.
+
+    Parameters:
+            a (string): version
+
+    Returns:
+            None: nothing, just executes
+'''
 def import_urlib_version(version):
     exec("import urllib%s as urllib" % version)
 
